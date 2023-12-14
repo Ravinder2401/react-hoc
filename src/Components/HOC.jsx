@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 
-const HOC = (OriginalComponent) => {
+const HOC = (OriginalComponent,numberParameter) => {
   const NewComponent = (props) => { // use props if we have some props in our initial component.
     const [money,setMoney] = useState(10);
     const handleIncrease = () => {
-        setMoney(money * 2);
+        setMoney(money * numberParameter);
     };
     return <OriginalComponent handleIncrease={handleIncrease} money={money} {...props}/>
   }

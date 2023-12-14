@@ -13,4 +13,4 @@ const Person1 = (props) => {
   )
 }
 
-export default HOC(Person1);
+export default HOC(Person1,2);

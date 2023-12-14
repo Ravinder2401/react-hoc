@@ -11,4 +11,4 @@ const Person2 = ({money,handleIncrease}) => {
   )
 }
 
-export default HOC(Person2);
+export default HOC(Person2,4);
