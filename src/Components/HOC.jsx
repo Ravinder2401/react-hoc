@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 
 const HOC = (OriginalComponent) => {
-  const NewComponent = () => {
+  const NewComponent = (props) => { // use props if we have some props in our initial component.
     const [money,setMoney] = useState(10);
     const handleIncrease = () => {
         setMoney(money * 2);
     };
-    return <OriginalComponent handleIncrease={handleIncrease} money={money}/>
+    return <OriginalComponent handleIncrease={handleIncrease} money={money} {...props}/>
   }
   return NewComponent; 
 }

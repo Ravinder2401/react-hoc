@@ -1,12 +1,13 @@
 import React from 'react'
 import HOC from './HOC';
 
-const Person1 = ({money,handleIncrease}) => {
+const Person1 = (props) => {
   return (
     <>
     <h3>High Order Component in React to reuse programming component logic.</h3>
-    <div>Person1 have $ {money}</div>
-    <button onClick={handleIncrease}>Add money</button>
+    <h4>Hi {props.name}</h4>
+    <div>Person1 have $ {props.money}</div>
+    <button onClick={props.handleIncrease}>Add money</button>
     <hr/>
     </>
   )

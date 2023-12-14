@@ -9,7 +9,7 @@ const App = () => {
     <>
     {/* <HighOrderFunction/> */}
     {/* <HighOrderFunctionExampleTwo/> */}
-    <Person1/>
+    <Person1 name='Ravinder'/>
     <Person2/>
     </>
   )
